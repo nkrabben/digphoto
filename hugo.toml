@@ -1,7 +1,7 @@
 baseURL = "http://nkrabben.github.io/digphoto/"
 languageCode = "en-us"
 title = "Digital Photography File Reference"
-theme = ""
+# theme = ""
 
 [params]
   description = "Comprehensive reference for digital photography file formats, naming conventions, and forensic interpretation"
