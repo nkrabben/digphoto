@@ -8,7 +8,7 @@ confidence: medium
 patterns:
   - pattern: "IMG_YYYYMMDD_HHMMSS.jpg"
     description: "AOSP default JPEG pattern"
-    models: "Stock Android, many manufacturers"
+    models: "Stock Android devices"
 
   - pattern: "YYYYMMDD_HHMMSS.jpg"
     description: "Alternative timestamp pattern"
@@ -21,12 +21,12 @@ patterns:
   - pattern: "IMG_####.jpg"
     description: "Simple counter pattern (older devices)"
     counter_range: "0001-9999"
-    models: "Older Android phones"
+    models: "Older stock Android devices"
 
   - pattern: "DSC####.jpg"
     description: "Digital camera style (some manufacturers)"
     counter_range: "0001-9999"
-    models: "Various brands"
+    models: "Various Android devices"
 
 tags:
   - naming
@@ -75,18 +75,7 @@ Screenshot file names look very similar to camera file names except, they use `S
 
 ## Third-Party Camera Apps
 
-When using third-party apps:
-
-### Open Camera
-
-- Configurable naming patterns
-- Default: `IMG_YYYYMMDD_HHMMSS.jpg`
-- User can customize prefix and format
-
-### Google Camera Port (GCam)
-
-- Uses Pixel-style naming: `PXL_YYYYMMDD_HHMMSS###.jpg`
-- Even on non-Pixel devices
+Third-party camera apps may follow their own file-naming schema although they generally use either DCF- or Android timestamp-style file names.
 
 ## Sources
 

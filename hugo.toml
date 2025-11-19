@@ -1,4 +1,4 @@
-baseURL = "http://nkrabben.github.io/digphoto/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Digital Photography File Reference"
 # theme = ""

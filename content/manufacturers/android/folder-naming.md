@@ -3,7 +3,7 @@ title: "Android Folder Conventions"
 manufacturer: Android
 topic: folder-structures
 last_verified: 2024-11-18
-confidence: medium
+confidence: high
 
 patterns:
   - pattern: "/DCIM/Camera/"
@@ -13,6 +13,10 @@ patterns:
   - pattern: "/DCIM/100ANDRO/"
     description: "Older default camera storage location"
     models: "Stock Android, many manufacturers"
+
+  - pattern: "/Pictures/Screenshot/"
+    description: "Screenshot storage location"
+    models: "All Pixels"
 
 tags:
   - foldering
@@ -32,7 +36,9 @@ The primary camera app stores images and video to folders named either `Camera` 
 
 ```sh
 ├── DCIM/
-    └── Camera/
+│   └── Camera/
+└── Pictures/
+    └── Screenshots/
 ```
 
 ## Variations

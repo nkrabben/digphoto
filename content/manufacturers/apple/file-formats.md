@@ -1,7 +1,7 @@
 ---
 title: "Apple File Formats"
 manufacturer: Apple
-device_type: iPhone, iPad
+device_type: Phone, Tablet
 topic: file-formats
 last_verified: 2024-11-18
 confidence: medium

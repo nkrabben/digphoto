@@ -1,13 +1,13 @@
 ---
-title: "Apple Proxies"
+title: "Apple Provenance"
 manufacturer: Apple
-device_type: iPhone, iPad
-topic: proxies
+device_type: Phone, Tablet
+topic: provenance
 last_verified: 2024-11-18
 confidence: low
 
 tags:
-  - proxies
+  - provenance
   - mobile
   - apple
 ---

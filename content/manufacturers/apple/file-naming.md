@@ -1,59 +1,31 @@
 ---
 title: "Apple iPhone File Naming Conventions"
 manufacturer: Apple
-device_type: iPhone, iPad
+device_type: Phone, Tablet
 topic: file-naming
 last_verified: 2024-11-18
 confidence: medium
 
 patterns:
-  - pattern: "IMG_####.HEIC"
-    description: "Standard HEIC photo (iOS 11+)"
+  - pattern: "IMG_####.EXT"
+    description: "All media uses the same counter"
     counter_range: "0001-9999"
-    models: "iPhone 7 and later (iOS 11+)"
-
-  - pattern: "IMG_####.JPG"
-    description: "JPEG photo (older iOS or compatibility mode)"
-    counter_range: "0001-9999"
-    models: "All iPhones"
-
-  - pattern: "IMG_####.MOV"
-    description: "Video file or Live Photo video component"
-    models: "All iPhones"
-
-  - pattern: "IMG_E####.HEIC"
-    description: "Edited photo"
-    models: "iOS 11+"
-
-  - pattern: "IMG_####.PNG"
-    description: "Screenshot"
-    models: "All iPhones"
-
-forensic_indicators:
-  - indicator: "HEIC extension"
-    meaning: "iPhone 7+ with iOS 11+, or newer iPhone"
-  - indicator: "IMG_E prefix"
-    meaning: "Photo edited in Photos app"
-  - indicator: "Paired HEIC and MOV"
-    meaning: "Live Photo (3-second video + photo)"
-  - indicator: "PNG with specific dimensions"
-    meaning: "Screenshot (varies by iPhone model)"
+    models: "All iPhones and iPads"
 
 tags:
   - naming
-  - forensics
   - mobile
+  - apple
 ---
 
 Apple maintains consistent file naming across iPhone and iPad generations that applies to all content types.
 
 ## Standard Pattern: IMG_####
 
-Apple's simple, consistent pattern:
 - Format: `IMG_####.EXT`
 - Counter: 0001-9999
 - Extension: varies on content type
--
+
 ### Images
 
 - Pattern: `IMG_####.HEIC`

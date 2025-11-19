@@ -1,7 +1,7 @@
 ---
 title: "Apple Timestamps"
 manufacturer: Apple
-device_type: iPhone, iPad
+device_type: Phone, Tablet
 topic: timestamps
 last_verified: 2024-11-18
 confidence: low

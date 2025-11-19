@@ -1,6 +1,7 @@
 ---
 title: "WhatsApp File Naming Conventions"
 app: WhatsApp
+app_type: Messaging
 topic: file-naming
 last_verified: 2024-11-18
 confidence: medium

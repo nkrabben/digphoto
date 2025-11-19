@@ -1,0 +1,34 @@
+{{ $topic := .Get "topic" }}
+{{ $pages := where .Site.RegularPages "Params.topic" $topic }}
+{{ $pages = where $pages "Params.app" "!=" nil }}
+
+{{ if gt (len $pages) 0 }}
+<table>
+<thead>
+<tr>
+  <th>App</th>
+  <th>App Type</th>
+  <th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+{{ range $pages.ByParam "app" }}
+<tr>
+  <td><a href="{{ .RelPermalink }}">{{ .Params.app }}</a></td>
+  <td><a href="{{ .RelPermalink }}">{{ .Params.app_type }}</a></td>
+  <td>
+    {{ if .Params.patterns }}
+      {{ range .Params.patterns }}
+        <code>{{ .pattern }}</code>
+        {{ if .description }}- <small>{{ .description }}</small>{{ end }}
+        <br>
+      {{ end }}
+    {{ end }}
+  </td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+{{ else }}
+<p><em>No manufacturer pages found for this topic yet.</em></p>
+{{ end }}
