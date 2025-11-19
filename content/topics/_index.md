@@ -6,7 +6,7 @@ Browse camera file format information by topic across all manufacturers. Each to
 
 ## Core File Characteristics
 
-### [File Naming Conventions]( {{< ref "topics/file-naming/" >}} )
+### [File Naming Conventions]( {{< relref "topics/file-naming/" >}} )
 How different camera manufacturers name their files. Covers patterns, counters, and prefixes.
 
 ### [Folder Structure](/topics/folder-structures/)
