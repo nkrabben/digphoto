@@ -1,6 +1,7 @@
 ---
 title: "Google Pixel File Naming Conventions"
-manufacturer: Google Pixel
+manufacturer: Google
+device_type: Phone
 topic: file-naming
 last_verified: 2024-11-18
 confidence:
@@ -29,7 +30,7 @@ Beginning with the Camera v7.5 in 2020, Google created a more distinctive file n
 ## Standard Pattern: PXL_yyyyMMdd-HHmmssSSS.TYPE.ext
 
 - Format: `PXL_yyyyMMdd_HHmmssSSS.TYPE.ext`
-- Timestamp: Either UTC or local time and may include milliseconds, depending on content
+- Timestamp: UTC, may include milliseconds, depending on content
 - Variants: Shortcodes for non-standard images
 - Extension: varies on content type
 
@@ -87,7 +88,7 @@ Viewable as one asset within the Photos app, but actually two distinct files.
 Components:
 
 - Pattern: `MVIMG_YYYYMMDD_HHMMSS.mp4` + `MVIMG_YYYYMMDD_HHMMSS.jpg`
-- Example: `MVIMG_20231223_180640.mp4` + `MVIMG_20231223_180640.jpg`
+- Example: `MVIMG_20191223_180640.mp4` + `MVIMG_20191223_180640.jpg`
 - Notes:
   - Pixel 1-4
 

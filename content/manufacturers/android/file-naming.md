@@ -42,6 +42,10 @@ Android photos tend to use lower-case `.jpg`.
 
 Stock AOSP (Android Open Source Project) devices use timestamp-based naming:
 
+- Format: `TYPE_yyyyMMdd_HHmmss.ext`
+- Timestamp: Often in local timezone
+- Extension: varies on content type
+
 ### Photos
 
 - Pattern: `IMG_YYYYMMDD_HHMMSS.jpg`
