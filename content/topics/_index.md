@@ -6,8 +6,8 @@ Browse camera file format information by topic across all manufacturers. Each to
 
 ## Core File Characteristics
 
-### [File Naming Conventions](topics/file-naming/)
-How different camera manufacturers name their files. Covers patterns, counters, prefixes, and forensic implications of naming schemes.
+### [File Naming Conventions]( {{< ref "topics/file-naming/" >}} )
+How different camera manufacturers name their files. Covers patterns, counters, and prefixes.
 
 ### [Folder Structure](/topics/folder-structures/)
 *Coming soon* - DCF standard, manufacturer variations, video folder structures (AVCHD, XDCAM, P2), and mobile device organization.
