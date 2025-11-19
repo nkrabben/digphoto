@@ -95,6 +95,3 @@ Components:
 ## Sources
 
 [Soon, everyone you share photos and videos with will know you've got a Pixel](https://www.androidpolice.com/2020/08/20/soon-everyone-you-share-photos-and-videos-with-will-know-youve-got-a-pixel/), Android Police
-
-
-

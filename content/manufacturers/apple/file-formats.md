@@ -6,24 +6,48 @@ topic: file-formats
 last_verified: 2024-11-18
 confidence: medium
 
+patterns:
+  - pattern: "HEIF, MOV, JPEG, DNG"
+
 tags:
   - formats
   - mobile
   - apple
 ---
 
+## Images
 
+### High Efficiency Image Format (HEIC)
 
-HEIC (High Efficiency Image Format)
-- Pattern: `IMG_####.HEIC`
 - Introduced: iOS 11 (2017)
-- Default: iPhone 7 and later
-- Advantages: Smaller file size, better quality than JPEG
-- Note: HEIF container, HEVC codec
-ProRAW (iPhone 12 Pro and later)
+- Container: HEIF
+- Codec: HEVC
+- Notes:
+  - Greater compression efficiency for a given quality
+  - Apps may convert to JPEG for compatibility purposes
 
-- Pattern: `IMG_####.DNG`
-- Format: Adobe DNG (Digital Negative)
-- Size: 25-40MB per file
-- Availability: iPhone 12 Pro, 13 Pro, 14 Pro, 15 Pro models
-- Note: Must be enabled in Settings
+### JPEG
+
+- Container: JFIF
+- Codec: JPEG DCT
+- Notes:
+  - Must be actively chosen by users on modern iPhones
+
+### ProRAW (DNG)
+
+- Introduced: iOS 11 (2017)
+- Container: TIFF (Adobe DNG)
+- Codec: ProRAW
+- Notes:
+  - Must be actively chosen by users
+  - Can be generated simultaneously with HEIF or JPEG
+
+## Video
+
+### Quicktime File (MOV)
+
+- Container: MPEG-4
+- Codec: HEVC
+- Notes:
+  - Used H264 until
+  - May be identified as an MP4 with a Quicktime Profile

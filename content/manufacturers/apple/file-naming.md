@@ -20,7 +20,7 @@ tags:
 
 Apple maintains consistent file naming across iPhone and iPad generations that applies to all content types.
 
-## Standard Pattern: IMG_####
+## Standard Pattern: IMG_####.EXT
 
 - Format: `IMG_####.EXT`
 - Counter: 0001-9999
@@ -28,10 +28,14 @@ Apple maintains consistent file naming across iPhone and iPad generations that a
 
 ### Images
 
+#### Standard Photo
+
 - Pattern: `IMG_####.HEIC`
 - Example: `IMG_6879.HEIC`
 - Usage:
   - iPhones after iOS 10
+
+#### Former Standard Photo
 
 - Pattern: `IMG_####.JPG`
 - Example: `IMG_6880.JPG`
@@ -39,23 +43,27 @@ Apple maintains consistent file naming across iPhone and iPad generations that a
   - iPhones before iOS 11
   - Compatibility mode ("Most Compatible" setting)
 
+#### RAW Photo
+
 - Pattern: `IMG_####.DNG`
 - Example: `IMG_6881.DNG`
 - Usage:
   - iPhones after iOS 12
   - Must be enabled
 
+#### Screenshots
+
 - Pattern: `IMG_####.PNG`
 - Example: `IMG_6882.PNG`
 - Usage:
   - Screenshots
 
-## Video Files
+### Video Files
 
 - Pattern: `IMG_####.MOV`
 - Example: `IMG_6883.MOV`
 
-## Live Photos
+### Live Photos
 
 Viewable as one asset within the Photos app, but actually two distinct files.
 
@@ -64,12 +72,11 @@ Components:
 - Pattern: `IMG_####.MOV` + `IMG_####.HEIC` or `IMG_####.JPG`
 - Example: `IMG_6884.MOV` + `IMG_6884.HEIC`
 
-## Edited
+### Edited
 
 When edited in Photos app:
 
 - Pattern: `IMG_E####.EXT`
 - Example: `IMG_E6879.HEIC`
 
-## Sources
-
+### Sources
