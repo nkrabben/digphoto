@@ -1,0 +1,32 @@
+baseURL = "http://nkrabben.github.io/digphoto/"
+languageCode = "en-us"
+title = "Digital Photography File Reference"
+theme = ""
+
+[params]
+  description = "Comprehensive reference for digital photography file formats, naming conventions, and forensic interpretation"
+  author = "Nick Krabbenhoeft"
+
+[taxonomies]
+  tag = "tags"
+  manufacturer = "manufacturers"
+  topic = "topics"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown
+
+[menu]
+  [[menu.main]]
+    name = "Manufacturers"
+    url = "/manufacturers/"
+    weight = 1
+  [[menu.main]]
+    name = "Topics"
+    url = "/topics/"
+    weight = 2
+  [[menu.main]]
+    name = "Guides"
+    url = "/guides/"
+    weight = 3

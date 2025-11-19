@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article>
+    {{ if .Params.manufacturer }}
+    <div class="metadata">
+        <strong>Manufacturer:</strong> {{ .Params.manufacturer }}<br>
+        {{ if .Params.topic }}<strong>Topic:</strong> {{ .Params.topic }}<br>{{ end }}
+        {{ if .Params.last_verified }}<strong>Last Verified:</strong> {{ .Params.last_verified }}{{ end }}
+        {{ if .Params.confidence }} | <strong>Confidence:</strong> {{ .Params.confidence }}{{ end }}
+    </div>
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ if .Params.tags }}
+    <div style="margin-top: 30px;">
+        <strong>Tags:</strong>
+        {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.manufacturer }}
+    <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: 5px;">
+        <strong>Related {{ .Params.manufacturer }} Pages:</strong>
+        <ul>
+        {{ range where .Site.RegularPages "Params.manufacturer" .Params.manufacturer }}
+            {{ if ne .Permalink $.Permalink }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</article>
+{{ end }}

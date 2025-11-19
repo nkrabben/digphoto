@@ -1,0 +1,27 @@
+{{ $topic := .Get "topic" }}
+{{ $pages := where .Site.RegularPages "Params.topic" $topic }}
+{{ $pages = where $pages "Params.manufacturer" "!=" nil }}
+
+{{ if gt (len $pages) 0 }}
+<table>
+<thead>
+<tr>
+  <th>Manufacturer</th>
+  <th>Image Folder Pattern</th>
+  <th>Video Folder Pattern</th>
+</tr>
+</thead>
+<tbody>
+{{ range $pages.ByParam "manufacturer" }}
+<tr>
+  <td><a href="{{ .RelPermalink }}">{{ .Params.manufacturer }}</a></td>
+  <td>{{ if .Params.patterns }}<code>{{ (index .Params.patterns 0).pattern }}</code>{{ end }}</td>
+  <td>{{ if gt (len .Params.patterns) 1 }}<code>{{ (index .Params.patterns 1).pattern }}</code>{{ end }}</td>
+
+</tr>
+{{ end }}
+</tbody>
+</table>
+{{ else }}
+<p><em>No manufacturer pages found for this topic yet.</em></p>
+{{ end }}

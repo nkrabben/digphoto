@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p>Showing all content tagged with <strong>{{ .Title }}</strong></p>
+
+<div style="margin-top: 30px;">
+    {{ range .Pages }}
+    <article style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px;">
+        <h3><a href="{{ .RelPermalink }}" style="text-decoration: none; color: #007acc;">{{ .Title }}</a></h3>
+        {{ if .Params.manufacturer }}<p><strong>Manufacturer:</strong> {{ .Params.manufacturer }}</p>{{ end }}
+        {{ if .Params.topic }}<p><strong>Topic:</strong> {{ .Params.topic }}</p>{{ end }}
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}">Read more →</a>
+    </article>
+    {{ end }}
+</div>
+
+<div style="margin-top: 30px;">
+    <a href="javascript:history.back()" style="color: #666;">← Back</a>
+</div>
+{{ end }}

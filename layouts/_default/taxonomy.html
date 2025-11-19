@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+<div style="margin-top: 30px;">
+    {{ range .Pages }}
+    <article style="margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+        <h2><a href="{{ .RelPermalink }}" style="text-decoration: none; color: #007acc;">{{ .Title }}</a></h2>
+        {{ if .Params.manufacturer }}<p><strong>Manufacturer:</strong> {{ .Params.manufacturer }}</p>{{ end }}
+        {{ if .Params.topic }}<p><strong>Topic:</strong> {{ .Params.topic }}</p>{{ end }}
+        {{ if .Params.last_verified }}<p><em>Last verified: {{ .Params.last_verified }}</em></p>{{ end }}
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}">Read more →</a>
+    </article>
+    {{ end }}
+</div>
+{{ end }}
