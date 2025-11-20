@@ -5,8 +5,6 @@ topic: folder-structures
 description: "Comprehensive comparison of folder naming patterns across manufacturers"
 ---
 
-# Folder Naming Conventions Across Manufacturers
-
 Before a file is stored, it needs a place to be stored. Generally, this is a digital storage device like an SD card, an SSD, or even a floppy disk, formatted according to some standard like FAT32 that supports folders. These folders can be provenance for the origin of the file.
 
 The existence of a `/DCIM/` parent folder dates the images to after the publication of the 2003 DCF standard. That standard was created to promote interoperabitliy between cameras, photo kiosks, printers, and other devices. Within a DCF `/DCIM/` folder a manufacturer can create child folders with up to 9999 media files. These child folders tend to include the manufacturers name (`/100CANON/`, `/100_FUJI/`, `/100GOPRO/`, etc).
@@ -56,12 +54,12 @@ Many manufactures deviated from the requirements of DCF, but the generally kept 
    1. Flattening of folder structures
    2. Metadata-based organization replaces folders
    3. Download/export creates new artificial structures
-9.  Filesystem Evolution Impact
-    1.  FAT32 → exFAT changes design decisions
-    2.  Larger files possible, different folder strategies
-    3.  Platform differences (iOS APFS, Android ext4/F2FS)
+9. Filesystem Evolution Impact
+    1. FAT32 → exFAT changes design decisions
+    2. Larger files possible, different folder strategies
+    3. Platform differences (iOS APFS, Android ext4/F2FS)
 10. Ecosystem Files (often overlooked)
-    1.  Sidecar files (.XMP, .AAE)
-    2.  System files (Thumbs.db, .DS_Store)
-    3.  Metadata databases
-    4.  Often separated from originals in transfers
+    1. Sidecar files (.XMP, .AAE)
+    2. System files (Thumbs.db, .DS_Store)
+    3. Metadata databases
+    4. Often separated from originals in transfers

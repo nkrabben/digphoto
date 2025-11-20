@@ -1,7 +1,7 @@
 ---
 title: "GoPro Folder Conventions"
 manufacturer: GoPro
-device_type: Action
+device_type: Camera, 360
 topic: folder-structures
 last_verified: 2024-11-19
 confidence: low

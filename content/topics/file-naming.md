@@ -5,8 +5,6 @@ topic: file-naming
 description: "Comprehensive comparison of file naming patterns across manufacturers"
 ---
 
-# File Naming Conventions Across Manufacturers
-
 In 1998, DCF introduced a very durable file naming schema, 4 characters for an identifier, 4 characters for a counter, 4 characters for the extension. The only allowed characters are `A-Z`, `0-9`, and a `.`. The schema balanced file-system compatibility requirements with corporate branding opportunities and has been followed by most camera manufacturers for nearly 30 years.
 
 The most DCF file name is the most generic, `IMG_####.JPG`, used by Apple and Canon, as well as toy cameras. Other manufacturers use the first 4 characters as a branding exercise: `DSCF` for Digital Still Camera Fuji or `GOPR` for GoPro images.
