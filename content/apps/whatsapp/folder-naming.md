@@ -57,15 +57,23 @@ All files sent and received via WhatsApp are foldered by the following schema:
 
 As WhatsApp adds more categories of files, they create additional folders.
 
-When audio or video is sent, an original version is stored in the parent folder, and a further compressed version is stored in the `Sent` folder with a counter incremented by one.
+Files created by another app are copied to `WhatsApp {Type}` with the WhatsApp file naming convention, then a compressed version is created for sending, and stored in `WhatsApp {Type}/Sent` with a counter incremented by 1. When files are created within WhatsApp with the camera, audio recorder, or editor functions, the file is save directly to `WhatsApp {Type}/Sent`.
+
+```sh
+└── WhatsApp Images
+    ├── IMG-20150325-WA0000.jpg # Copy of original image
+    └── Sent
+        ├── IMG-20150325-WA0001.jpg # Compressed version of WA0000
+        └── IMG-20150325-WA0003.jpg # Image from WhatsApp Camera
+```
 
 ### Images
 
-Images created by the WhatsApp camera or attached by the image option are store in `WhatsApp Images`. Images attached as a generic file are stored in `WhatsApp Documents`.
+Images sent as images are stored in `WhatsApp Images` and `WhatsApp Images/Sent`. Images attached as a generic file are stored in `WhatsApp Documents`.
 
 ### Video
 
-Videos created with the WhatsApp camera or attached by the image option are store in `WhatsApp Video`. Videos attached as a generic file are stored in `WhatsApp Documents`.
+Videos sent as videos are stored in `WhatsApp Video` and `WhatsApp Video/Sent`. Videos attached as a generic file are stored in `WhatsApp Documents`.
 
 Video recorded by holding the camera button in WhatsApp are stored in `WhatsApp Video Notes`. Within the folder, files are stored in weekly folders named `yyyyww`.
 
@@ -78,7 +86,7 @@ Video recorded by holding the camera button in WhatsApp are stored in `WhatsApp 
 
 ### Audio
 
-Audio created by tapping the microphone in WhatsApp are stored in `WhatsApp Audio`. Audio attached as a generic file are stored in `WhatsApp Documents`.
+Audio sent as audio is stored in `WhatsApp Audio` and `WhatsApp Audio/Sent`. Audio attached as a generic file are stored in `WhatsApp Documents`.
 
 Audio recorded by holding the microphone in WhatsApp are stored in `WhatsApp Voice Notes`. Within the folder, files are stored in weekly folders named `yyyyww`.
 
