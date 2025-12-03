@@ -8,26 +8,26 @@ confidence: high
 
 patterns:
   - pattern: "WhatsApp/Media/WhatsApp {Type}/"
-    description: "Location for received files of a type"
-    model: Android
+    description: "Location for received and copied files of a type"
+    platform: Android
 
-  - pattern: "WhatsApp/Media/WhatsApp {Type}/Sent"
-    description: "Location for sent files of a type"
-    model: Android
-
-  - pattern: "WhatsApp/Media/WhatsApp {Type}/Private"
-    description: "Location for received files of a type the user doesn't want available to other apps"
-    model: Android
+  - pattern: "Media/{Phone Number}"
+    description: "Location for files from one conversation"
+    platform: iOS
 
 tags:
   - foldering
   - mobile
+  - app
   - android
+  - iOS
 ---
 
-The WhatsApp folder has migrated to less visible location. Originally in the user's home directory, since 2021 it can be  `/home/Android/media/com.WhatsApp`
+## Android
 
-## Standard Folders: WhatsApp/Media/WhatsApp {Type}/(Sent|Private)
+Originally in `/sdcard/WhatsApp/Media`, media storage was moved to `/sdcard/Android/media/com.WhatsApp/WhatsApp/Media` with Android 11's scoped storage update.
+
+### Standard Folders: WhatsApp/Media/WhatsApp {Type}/(Sent|Private)
 
 All files sent and received via WhatsApp are foldered by the following schema:
 
@@ -67,11 +67,11 @@ Files created by another app are copied to `WhatsApp {Type}` with the WhatsApp f
         └── IMG-20150325-WA0003.jpg # Image from WhatsApp Camera
 ```
 
-### Images
+#### Images
 
 Images sent as images are stored in `WhatsApp Images` and `WhatsApp Images/Sent`. Images attached as a generic file are stored in `WhatsApp Documents`.
 
-### Video
+#### Video
 
 Videos sent as videos are stored in `WhatsApp Video` and `WhatsApp Video/Sent`. Videos attached as a generic file are stored in `WhatsApp Documents`.
 
@@ -84,7 +84,7 @@ Video recorded by holding the camera button in WhatsApp are stored in `WhatsApp 
     └── ...
 ```
 
-### Audio
+#### Audio
 
 Audio sent as audio is stored in `WhatsApp Audio` and `WhatsApp Audio/Sent`. Audio attached as a generic file are stored in `WhatsApp Documents`.
 
@@ -95,4 +95,21 @@ Audio recorded by holding the microphone in WhatsApp are stored in `WhatsApp Voi
     ├── 201701 # First week of January
     ├── 201705 # Skips to a week in February
     └ ...
+```
+
+## iOS
+
+All app data is stored in a directory with `/private/var/mobile/`, previous conventions have included `/private/var/mobile/Applications/group.net.whatsapp.WhatsApp.shared` and `/private/var/mobile/Containers/Shared/AppGroup/{GUID}/`.
+
+### Standard Folders
+
+All file types for each conversation are stored in a single folder.
+
+```sh
+└── Media/
+    ├── {phone number}@s.whatsapp.net/
+    │   └── a/         # probably first character of hash
+    │       └── 0/     # probably second character of a hash
+    ├── {phone number}@s.whatsapp.net/
+    ├── ...
 ```
