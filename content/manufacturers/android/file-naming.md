@@ -1,6 +1,7 @@
 ---
 title: "Android File Naming Conventions"
 manufacturer: Android
+device_type: phone, tablet
 topic: file-naming
 last_verified: 2024-11-18
 confidence: medium

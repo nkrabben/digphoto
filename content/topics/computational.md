@@ -8,4 +8,4 @@ description: "Comprehensive comparison of computational methods across manufactu
 
 ## Comparison Table
 
-{{< pattern-table topic="computational" >}}
+{{< device-table topic="computational" >}}

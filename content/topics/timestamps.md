@@ -13,4 +13,4 @@ Camera manufacturers have many methods to record the time as well. Embedded meta
 
 ## Comparison Table
 
-{{< pattern-table topic="timestamps" >}}
+{{< device-table topic="timestamps" >}}

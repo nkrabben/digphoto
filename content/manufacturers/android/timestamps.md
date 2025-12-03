@@ -1,6 +1,7 @@
 ---
 title: "Android Timestamps"
 manufacturer: Android
+device_type: phone, tablet
 topic: timestamps
 last_verified: 2024-11-18
 confidence: medium

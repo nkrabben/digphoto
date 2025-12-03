@@ -1,6 +1,7 @@
 ---
 title: "Android File Formats"
 manufacturer: Android
+device_type: phone, tablet
 topic: file-formats
 last_verified: 2024-11-18
 confidence: medium
@@ -15,8 +16,6 @@ tags:
 
 ## File Formats
 
-
-
 ### Photo Formats
 - JPEG: Universal
 - PNG: Screenshots, rarely photos
@@ -26,4 +25,3 @@ tags:
 ### Video Formats
 - MP4: Most common
 - 3GP: Older devices
-- WEBM: Some apps

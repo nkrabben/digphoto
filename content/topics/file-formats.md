@@ -11,4 +11,4 @@ Digital video is more complex. MPEG-4 did not become the standard format across 
 
 ## Comparison Table
 
-{{< pattern-table topic="file-formats" >}}
+{{< device-table topic="file-formats" >}}

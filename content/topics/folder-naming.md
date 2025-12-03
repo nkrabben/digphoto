@@ -15,7 +15,9 @@ Many manufactures deviated from the requirements of DCF, but the generally kept 
 
 ## Comparison Table
 
-{{< pattern-table topic="folder-structures" >}}
+{{< device-table topic="folder-structures" >}}
+
+{{< app-table topic="folder-structures" >}}
 
 ## Detailed Information
 

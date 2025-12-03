@@ -7,4 +7,4 @@ description: "Comprehensive comparison of provenance metadata across manufacture
 
 ## Comparison Table
 
-{{< pattern-table topic="provenance" >}}
+{{< device-table topic="provenance" >}}

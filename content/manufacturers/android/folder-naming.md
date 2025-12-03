@@ -1,6 +1,7 @@
 ---
 title: "Android Folder Conventions"
 manufacturer: Android
+device_type: phone, tablet
 topic: folder-structures
 last_verified: 2024-11-18
 confidence: high

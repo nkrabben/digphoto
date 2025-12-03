@@ -9,4 +9,4 @@ Most cameras create smaller versions of the original files for faster browsing a
 
 ## Comparison Table
 
-{{< pattern-table topic=proxies" >}}
+{{< device-table topic=proxies" >}}

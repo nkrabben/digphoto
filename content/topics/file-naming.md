@@ -21,6 +21,6 @@ Messaging apps deal with this variety in one of two ways. They retain the filena
 
 ## Comparison Table
 
-{{< pattern-table topic="file-naming" >}}
+{{< device-table topic="file-naming" >}}
 
 {{< app-table topic="file-naming" >}}
