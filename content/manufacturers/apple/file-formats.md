@@ -25,6 +25,7 @@ tags:
 - Notes:
   - Greater compression efficiency for a given quality
   - Apps may convert to JPEG for compatibility purposes
+  - Used for Spatial Images. Each image is stored as a separate track with metadata identifying the lens
 
 ### JPEG
 
@@ -51,3 +52,4 @@ tags:
 - Notes:
   - Used H264 until
   - May be identified as an MP4 with a Quicktime Profile
+  - Used for Spatial Video. Each image is stored as a separate track with metadata identifying the lens
