@@ -32,4 +32,3 @@ Canon uses a DCF file system. New folders are created
 ```
 
 ## Sources
-

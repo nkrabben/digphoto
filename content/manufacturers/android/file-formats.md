@@ -17,11 +17,13 @@ tags:
 ## File Formats
 
 ### Photo Formats
+
 - JPEG: Universal
 - PNG: Screenshots, rarely photos
 - DNG: RAW on supported devices
 - HEIC: Rare on Android, increasing
 
 ### Video Formats
+
 - MP4: Most common
 - 3GP: Older devices
